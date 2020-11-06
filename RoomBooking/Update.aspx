@@ -115,7 +115,7 @@
                             </td>
                         </tr>
                     </table>
-                    <asp:Button ID="Button1" runat="server" class="ebook-input-btn" Text="Upadate" Width="212px" OnClick="Button1_Click" />
+                    <asp:Button ID="Button1" runat="server" class="ebook-input-btn" Text="Update" Width="212px" OnClick="Button1_Click" />
                 </div>
             </div>
         </section>  
