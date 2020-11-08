@@ -72,6 +72,7 @@
       <DependentUpon>RegisterDatabase.mdf</DependentUpon>
     </Content>
     <Content Include="BookingConfirmation.aspx" />
+    <Content Include="ContactUs.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="images\about.jpg" />
     <Content Include="images\about_1.jpg" />
@@ -167,6 +168,13 @@
     </Compile>
     <Compile Include="BookingConfirmation.aspx.designer.cs">
       <DependentUpon>BookingConfirmation.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
     </Compile>
     <Compile Include="Home.aspx.cs">
       <DependentUpon>Home.aspx</DependentUpon>

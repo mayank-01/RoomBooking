@@ -35,7 +35,7 @@
 							<nav class="main_nav">
 								<ul class="d-flex flex-row align-items-start justify-content-start">
 									<li class="active"><asp:HyperLink runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink></li>
-									<li><asp:HyperLink runat="server">Contact Us</asp:HyperLink></li>
+									<li><asp:HyperLink runat="server" NavigateUrl="~/ContactUs.aspx">Contact Us</asp:HyperLink></li>
 									<li><a href="#">Services</a></li>
 									<li><asp:HyperLink runat="server" NavigateUrl="~/Register.aspx" ID="RegisterLink">Register</asp:HyperLink></li>
 									<li><asp:HyperLink runat="server" NavigateUrl="~/Profile.aspx" ID="ProfileLink">Profile</asp:HyperLink></li>
@@ -555,9 +555,9 @@
 				</div>
 			</div>
 		</div>
-		<div class="col text-center"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+		<div class="col text-center">
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by our team.
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --> </div>
+		 </div>
 	</footer>
 </div>
 
