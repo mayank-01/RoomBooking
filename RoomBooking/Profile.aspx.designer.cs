@@ -69,13 +69,13 @@ namespace RoomBooking
         protected global::System.Web.UI.WebControls.Button UpdateButton;
 
         /// <summary>
-        /// MyBooking control.
+        /// MyBookings control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button MyBooking;
+        protected global::System.Web.UI.WebControls.Button MyBookings;
 
         /// <summary>
         /// LogoutBuuton control.
