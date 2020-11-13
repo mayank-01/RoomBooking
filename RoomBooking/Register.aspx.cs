@@ -32,7 +32,7 @@ namespace RoomBooking
             cmd.ExecuteNonQuery();
             con.Close();
             Session["Username"] = Username.Text;
-            Response.Redirect("Login.aspx");
+            Response.Redirect("Home.aspx");
 
         }
 

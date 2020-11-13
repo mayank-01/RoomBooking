@@ -59,7 +59,7 @@
             <asp:Label ID="UNText" runat="server" ForeColor="Red"></asp:Label>
         </h1>
             
-        <asp:GridView ID="mydata" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" Height="269px" Width="849px" GridLines="Vertical">
+        <asp:GridView ID="mydata" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" Height="269px" Width="849px" GridLines="Vertical" EmptyDataText="No record found.">
             <AlternatingRowStyle BackColor="#DCDCDC" />
             <Columns>
                 <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />

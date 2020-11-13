@@ -23,7 +23,7 @@
                     <div class="row h-100 no-gutters">
                         <div class="col-6 p-3">
                             <h5>Room Types</h5>
-                            <h2><asp:Label ID="Label2" runat="server" Text="Label"></asp:Label></h2>
+                            <h2><asp:Label ID="Label2" runat="server" Text="5"></asp:Label></h2>
                         </div>
                         <div class="col bg-success text-white d-flex">
                             <h1 class="mx-auto align-self-center">
@@ -69,7 +69,7 @@
             <h4>Today's Bookings</h4>
             <hr />
             <div class="col-12">
-                <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" class="table table-hover">
+                <asp:GridView ID="GridView1" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None" class="table table-hover" EmptyDataText="No record found">
                     <AlternatingRowStyle BackColor="White" />
                     <EditRowStyle BackColor="#7C6F57" />
                     <FooterStyle BackColor="#1C5E55" Font-Bold="True" ForeColor="White" />
