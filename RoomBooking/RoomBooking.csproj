@@ -156,6 +156,7 @@
     <Content Include="styles\news.css" />
     <Content Include="styles\news_responsive.css" />
     <Content Include="styles\responsive.css" />
+    <Content Include="ViewBookings.aspx" />
     <Content Include="Web.config" />
     <Content Include="Register.aspx" />
     <Content Include="Login.aspx" />
@@ -233,6 +234,13 @@
     </Compile>
     <Compile Include="Update.aspx.designer.cs">
       <DependentUpon>Update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewBookings.aspx.cs">
+      <DependentUpon>ViewBookings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewBookings.aspx.designer.cs">
+      <DependentUpon>ViewBookings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>

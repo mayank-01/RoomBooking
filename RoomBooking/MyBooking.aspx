@@ -63,8 +63,8 @@
             <AlternatingRowStyle BackColor="#DCDCDC" />
             <Columns>
                 <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
-                <asp:BoundField DataField="CheckInDate" HeaderText="CheckInDate" SortExpression="CheckInDate" />
-                <asp:BoundField DataField="CheckOutDate" HeaderText="CheckOutDate" SortExpression="CheckOutDate" />
+                <asp:BoundField DataField="CheckInDate" HeaderText="CheckInDate" SortExpression="CheckInDate" DataFormatString="{0:dd/MM/yyyy}"/>
+                <asp:BoundField DataField="CheckOutDate" HeaderText="CheckOutDate" SortExpression="CheckOutDate" DataFormatString="{0:dd/MM/yyyy}" />
                 <asp:BoundField DataField="Adults" HeaderText="Adults" SortExpression="Adults" />
                 <asp:BoundField DataField="Children" HeaderText="Children" SortExpression="Children" />
                 <asp:BoundField DataField="NumberOfRooms" HeaderText="NumberOfRooms" SortExpression="NumberOfRooms" />

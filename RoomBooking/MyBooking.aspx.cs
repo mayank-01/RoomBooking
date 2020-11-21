@@ -21,6 +21,7 @@ namespace RoomBooking
             cmd.Parameters.AddWithValue("@un", Session["Username"]);
             mydata.DataSource = cmd.ExecuteReader();
             mydata.DataBind();
+            con.Close();
         }
 
         protected void Button1_Click(object sender, EventArgs e)
