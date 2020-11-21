@@ -12,7 +12,7 @@
                         </div>
                         <div class="col bg-info text-white d-flex">
                             <h1 class="mx-auto align-self-center">
-                                <i class="fa fa-2x fa-heart-o"></i>
+                                <i class="fa fa-2x fa-users"></i>
                             </h1>
                         </div>
                     </div>
@@ -27,7 +27,7 @@
                         </div>
                         <div class="col bg-success text-white d-flex">
                             <h1 class="mx-auto align-self-center">
-                                <i class="fa fa-2x fa-envelope"></i>
+                                <i class="fa fa-2x fa-hotel"></i>
                             </h1>
                         </div>
                     </div>
@@ -42,7 +42,7 @@
                         </div>
                         <div class="col bg-warning text-white d-flex">
                             <h1 class="mx-auto align-self-center">
-                                <i class="fa fa-2x fa-signal"></i>
+                                <i class="fa fa-2x fa-envelope"></i>
                             </h1>
                         </div>
                     </div>
@@ -57,7 +57,7 @@
                         </div>
                         <div class="col bg-danger text-white d-flex">
                             <h1 class="mx-auto align-self-center">
-                                <i class="fa fa-2x fa-database"></i>
+                                <i class="fa fa-2x fa-heart"></i>
                             </h1>
                         </div>
                     </div>
