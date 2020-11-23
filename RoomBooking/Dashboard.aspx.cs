@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
+using System.Data;
 using System.Configuration;
 
 namespace RoomBooking
@@ -18,17 +19,14 @@ namespace RoomBooking
             con.Open();
             SqlCommand cmd = new SqlCommand("SELECT BookingsTable.*, ReservationTable.RoomNo FROM BookingsTable FULL OUTER JOIN ReservationTable ON BookingsTable.BookingId= ReservationTable.BookingId WHERE BookingsTable.CheckInDate=@checkin", con);
             cmd.Parameters.AddWithValue("@checkin", DateTime.Today);
-            SqlDataReader data = cmd.ExecuteReader();
+            cmd.ExecuteNonQuery();
+            DataTable data = new DataTable();
+            SqlDataAdapter sa = new SqlDataAdapter(cmd);
+            sa.Fill(data);
             GridView1.DataSource = data;
             GridView1.DataBind();
-            int count = 0;
-            while (data.HasRows)
-            {
-                count++;
-            }
-            data.Close();
-            Label1.Text = count.ToString();
-            SqlCommand cmd1 = new SqlCommand("Select COUNT(*) from BookingsTable;", con);
+            Label1.Text = data.Rows.Count.ToString();
+            SqlCommand cmd1 = new SqlCommand("Select COUNT(DISTINCT(Name)) from BookingsTable;", con);
             Label4.Text = cmd1.ExecuteScalar().ToString();
             con.Close();
         }
