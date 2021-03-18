@@ -44,6 +44,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Razorpay, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Razorpay.3.0.0\lib\net45\Razorpay.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -71,7 +77,6 @@
     <Content Include="App_Data\RegisterDatabase_log.ldf">
       <DependentUpon>RegisterDatabase.mdf</DependentUpon>
     </Content>
-    <Content Include="BookingConfirmation.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="Home.aspx" />
     <Content Include="images\about.jpg" />
@@ -166,13 +171,6 @@
     <Content Include="Rooms.aspx" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BookingConfirmation.aspx.cs">
-      <DependentUpon>BookingConfirmation.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="BookingConfirmation.aspx.designer.cs">
-      <DependentUpon>BookingConfirmation.aspx</DependentUpon>
-    </Compile>
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

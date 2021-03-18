@@ -25,7 +25,7 @@ namespace RoomBooking
             String today = date.ToString("yyyy-MM-dd");
             String maxDate = date.AddDays(45).ToString("yyyy-MM-dd");
             CheckInDate.Attributes["min"] = today;
-            CheckOutDate.Attributes["min"] = today;
+            CheckOutDate.Attributes["min"] = date.AddDays(1).ToString("yyyy-MM-dd");
             CheckInDate.Attributes["max"] = maxDate;
             CheckOutDate.Attributes["max"] = maxDate;
         }
@@ -56,7 +56,7 @@ namespace RoomBooking
                     Session["Children"] = Children.Text;
                     Session["Rooms"] = Rooms.Text;
                     Session["RoomType"] = RoomTypeList.SelectedValue;
-                    Response.Redirect("BookingConfirmation.aspx");
+                    Response.Redirect("PaymentsPage.aspx");
                 }
                 else
                 {

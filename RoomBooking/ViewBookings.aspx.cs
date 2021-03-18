@@ -56,5 +56,15 @@ namespace RoomBooking
             GridView1.DataBind();
             con.Close();
         }
+
+        protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
+        {
+            Response.Redirect("Dashboard.aspx?id=" + GridView1.Rows[e.RowIndex].Cells[1].Text);
+        }
+
+        protected void GridView1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

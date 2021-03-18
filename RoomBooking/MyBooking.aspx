@@ -62,7 +62,7 @@
         <asp:GridView ID="mydata" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="None" BorderWidth="1px" CellPadding="3" Height="269px" Width="849px" GridLines="Vertical" EmptyDataText="No record found.">
             <AlternatingRowStyle BackColor="#DCDCDC" />
             <Columns>
-                <asp:BoundField DataField="Name" HeaderText="Name" SortExpression="Name" />
+                <asp:BoundField DataField="BookingID" HeaderText="BookingID" SortExpression="BookingID" />
                 <asp:BoundField DataField="CheckInDate" HeaderText="CheckInDate" SortExpression="CheckInDate" DataFormatString="{0:dd/MM/yyyy}"/>
                 <asp:BoundField DataField="CheckOutDate" HeaderText="CheckOutDate" SortExpression="CheckOutDate" DataFormatString="{0:dd/MM/yyyy}" />
                 <asp:BoundField DataField="Adults" HeaderText="Adults" SortExpression="Adults" />

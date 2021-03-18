@@ -17,7 +17,7 @@ namespace RoomBooking
             string connectionString = ConfigurationManager.ConnectionStrings["dbconnectionstring"].ConnectionString;
             SqlConnection con = new SqlConnection(connectionString);
             con.Open();
-            SqlCommand cmd = new SqlCommand("SELECT  [Name], [CheckInDate], [CheckOutDate], [Adults], [Children], [NumberOfRooms], [RoomType], [BillAmount] FROM [BookingsTable] WHERE Name=@un", con);
+            SqlCommand cmd = new SqlCommand("SELECT  [BookingID], [CheckInDate], [CheckOutDate], [Adults], [Children], [NumberOfRooms], [RoomType], [BillAmount] FROM [BookingsTable] WHERE Name=@un", con);
             cmd.Parameters.AddWithValue("@un", Session["Username"]);
             mydata.DataSource = cmd.ExecuteReader();
             mydata.DataBind();
